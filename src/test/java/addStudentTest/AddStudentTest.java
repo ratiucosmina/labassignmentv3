@@ -38,7 +38,7 @@ public class AddStudentTest  {
     }
 
     @Test
-    public void testAddStudentNumeValid(){
+    public void testAddStudentNameValid(){
         StudentXMLRepo repo=new StudentXMLRepo(new StudentValidator(),"file.xml");
 
         String nume="nume";
@@ -54,7 +54,7 @@ public class AddStudentTest  {
     }
 
     @Test
-    public void testAddStudentNumeInvalid(){
+    public void testAddStudentNameInvalid(){
         StudentXMLRepo repo=new StudentXMLRepo(new StudentValidator(),"file.xml");
 
         String nume="";
@@ -68,7 +68,7 @@ public class AddStudentTest  {
     }
 
     @Test
-    public void testAddStudentGrupaValid(){
+    public void testAddStudentGroupValid(){
         StudentXMLRepo repo=new StudentXMLRepo(new StudentValidator(),"file.xml");
 
         int grupa=936;
@@ -83,7 +83,7 @@ public class AddStudentTest  {
     }
 
     @Test
-    public void testAddStudentGrupaInvalid(){
+    public void testAddStudentGroupInvalid(){
         StudentXMLRepo repo=new StudentXMLRepo(new StudentValidator(),"file.xml");
 
         Student student=new Student("id","nume",0,"email","indrumator");
