@@ -124,4 +124,20 @@ public class AddStudentTest  {
         }
     }
 
+    @Test
+    public void testAddStudentNameNull(){
+        StudentXMLRepo repo=new StudentXMLRepo(new StudentValidator(),"file.xml");
+
+        String nume="";
+        Student student=new Student("id",null,10,"","indrumator");
+        try {
+            repo.save(student);
+            assert false;
+        } catch (ValidatorException e) {
+            assert false;
+        } catch (NullPointerException e) {
+            assert true;
+        }
+    }
+
 }
