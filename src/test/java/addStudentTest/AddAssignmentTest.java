@@ -93,7 +93,7 @@ public class AddAssignmentTest {
     }
 
     @Test
-    public void testAddAssignmentPredareValid(){
+    public void testAddAssignmentValid(){
         TemaLabXMLRepo repo=new TemaLabXMLRepo(new TemaLabValidator(),"file.xml");
 
         String descriere="valid";
