@@ -28,12 +28,12 @@ public class TemaLabXMLService extends AbstractXMLService<Integer,TemaLab>{
             System.out.println("Invalid id");
         }
         try {
-            id=Integer.parseInt(params[2]);
+            deadline=Integer.parseInt(params[2]);
         }catch (NumberFormatException e){
             System.out.println("Invalid deadline");
         }
         try {
-            id=Integer.parseInt(params[3]);
+            received=Integer.parseInt(params[3]);
         }catch (NumberFormatException e){
             System.out.println("Invalid received week");
         }
